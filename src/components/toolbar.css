@@ -2,11 +2,16 @@
   color: #ffffffa1;
 
   min-width: 100vw;
+}
+.bg-darker {
   background-color: #000000cc;
 }
-
 .toolbar__body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.MuiSlider-root {
+  color: white !important;
 }
