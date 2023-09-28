@@ -1,12 +1,15 @@
 import "./App.css";
+import Dock from "./components/Dock";
 import Toolbar from "./components/Toolbar";
 
 function App() {
   return (
     <div className='background'>
-      <Toolbar />
-      {/* Dock */}
-      {/* desktop icons */}
+      <div>
+        <Toolbar />
+        <Dock />
+        {/* desktop icons */}
+      </div>
     </div>
   );
 }

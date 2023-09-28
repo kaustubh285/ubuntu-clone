@@ -1,0 +1,20 @@
+.dock {
+  color: #ffffffa1;
+
+  min-height: 99vh;
+  /* height: 100%; */
+  /* max-width: 5vw; */
+  width: max-content;
+  background-color: #0000008c;
+}
+
+.chrome-img-dock {
+  background: url("/public/chrome.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.dock__apps {
+}
