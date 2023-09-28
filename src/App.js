@@ -3,11 +3,12 @@ import Dock from "./components/Dock";
 import Toolbar from "./components/Toolbar";
 
 function App() {
+  const setScreenBrightness = (brightnessLevel) => {};
   return (
     <div className='background'>
       <div>
-        <Toolbar />
-        <Dock />
+        <Toolbar setScreenBrightness={setScreenBrightness} />
+        <Dock screenBrightnessLevel={10} />
         {/* desktop icons */}
       </div>
     </div>

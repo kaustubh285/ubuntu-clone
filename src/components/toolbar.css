@@ -6,6 +6,9 @@
 .bg-darker {
   background-color: #000000cc;
 }
+.bg-darkest {
+  background-color: #000000;
+}
 .toolbar__body {
   display: flex;
   align-items: center;

@@ -1,6 +1,6 @@
 .dock {
   color: #ffffffa1;
-
+  z-index: 10;
   min-height: 99vh;
   /* height: 100%; */
   /* max-width: 5vw; */
