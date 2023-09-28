@@ -1,0 +1,12 @@
+.toolbar {
+  color: #ffffffa1;
+
+  min-width: 100vw;
+  background-color: #000000cc;
+}
+
+.toolbar__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
