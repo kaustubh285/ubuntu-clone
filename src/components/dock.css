@@ -8,6 +8,14 @@
   background-color: #0000008c;
 }
 
+.gedit-img-dock {
+  background: url("/public/GNOME_Gedit_2018\ \(1\).png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
 .chrome-img-dock {
   background: url("/public/chrome.png");
   background-position: center center;
