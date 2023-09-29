@@ -1,4 +1,5 @@
 import "./App.css";
+import Desktop from "./components/Desktop";
 import Dock from "./components/Dock";
 import Toolbar from "./components/Toolbar";
 
@@ -8,7 +9,7 @@ function App() {
     <div className='background'>
       <div>
         <Toolbar setScreenBrightness={setScreenBrightness} />
-        <Dock screenBrightnessLevel={10} />
+        <Desktop className='flex-1' />
         {/* desktop icons */}
       </div>
     </div>

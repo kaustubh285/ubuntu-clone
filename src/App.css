@@ -7,3 +7,17 @@
   background-repeat: no-repeat;
   overflow: hidden !important;
 }
+
+.folder-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0.4rem /* 12px */;
+  margin-bottom: 0.4rem /* 12px */;
+  cursor: pointer;
+}
+
+.folder-icon > div {
+  margin-bottom: 0.2rem;
+}
