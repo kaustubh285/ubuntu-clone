@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Dock from "./Dock";
 import Draggable from "react-draggable";
 
-function Desktop() {
+function Desktop({ blackLayerVisibility, iconsVisibility }) {
   let disabled = false;
+
   return (
     <div className='desktop flex w-full'>
-      <Dock screenBrightnessLevel={10} />
-      <div className='flex-1 text-white w-fit static p-5 '>
+      <div
+        className='absolute top-6 left-0 right-0 bottom-0'
+        style={{
+          backgroundColor: "#000000",
+          opacity: blackLayerVisibility,
+        }}></div>
+      <Dock
+        screenBrightnessLevel={10}
+        blackLayerVisibility={blackLayerVisibility}
+        iconsVisibility={iconsVisibility}
+      />
+      <div
+        className='flex-1 text-white w-fit static p-5 '
+        style={{ opacity: iconsVisibility }}>
         <Draggable disabled={disabled} bounds='parent'>
           <div style={{ paddingLeft: 60, paddingTop: 20 }} className='w-fit'>
             <div className='cursor-move folder-icon'>

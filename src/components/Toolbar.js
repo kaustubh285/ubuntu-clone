@@ -11,12 +11,12 @@ import {
   ChevronRightIcon,
   ChevronDownIcon,
 } from "@heroicons/react/24/solid";
-import { Popover, Slider, Stack } from "@mui/material";
+import { Popover, Slider } from "@mui/material";
 
-function Toolbar({ setScreenBrightness }) {
+function Toolbar({ setBrightnessValue, brightnessValue }) {
   const [anchorEl, setAnchorEl] = React.useState();
   const [currentTime, setCurrentTime] = useState("");
-  const [brightnessValue, setBrightnessValue] = React.useState(30);
+
   const [soundValue, setSoundValue] = React.useState(30);
 
   // OPEN AND CLOSE THE POPOVER
@@ -33,8 +33,8 @@ function Toolbar({ setScreenBrightness }) {
 
   const handleBrightnessChange = (event, newValue) => {
     setBrightnessValue(newValue);
-    setScreenBrightness(newValue);
   };
+
   const handleSoundChange = (event, newValue) => {
     setSoundValue(newValue);
   };
@@ -92,6 +92,8 @@ function Toolbar({ setScreenBrightness }) {
               <div className='flex items-center content-between'>
                 <SunIcon className='h-4 w-6 mr-3 text-white' />
                 <Slider
+                  min={3}
+                  max={10}
                   className='text-white'
                   size='small'
                   aria-label='Brightness'
