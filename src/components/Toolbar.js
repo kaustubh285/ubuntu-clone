@@ -9,6 +9,7 @@ import {
   NoSymbolIcon,
   WifiIcon,
   ChevronRightIcon,
+  ChevronDownIcon,
 } from "@heroicons/react/24/solid";
 import { Popover, Slider, Stack } from "@mui/material";
 
@@ -62,10 +63,11 @@ function Toolbar({ setScreenBrightness }) {
           <img
             width='50'
             height='50'
-            className='h-4 w-4 ml-1 '
+            className='h-4 w-4 ml-1 opacity-70 cursor-pointer hover:opacity-100'
             src='https://img.icons8.com/ios-filled/50/ffffff/battery-.png'
             alt='battery-'
           />
+          <ChevronDownIcon className='h-4 w-6 text-white-100 cursor-pointer hover:text-white' />
         </div>
       </div>
 
