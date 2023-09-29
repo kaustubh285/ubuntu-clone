@@ -4,7 +4,13 @@
   min-width: 100vw;
 }
 .bg-darker {
-  background-color: #000000cc;
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.bg-dark-8 {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .bg-darkest {
   background-color: #000000;

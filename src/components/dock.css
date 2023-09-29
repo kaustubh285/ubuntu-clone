@@ -5,7 +5,7 @@
   /* height: 100%; */
   /* max-width: 5vw; */
   width: max-content;
-  background-color: #0000008c;
+  background-color: hsla(0, 0%, 0%, 0.85);
 }
 
 .gedit-img-dock {
@@ -24,5 +24,5 @@
   overflow: hidden;
 }
 
-.dock__apps {
+.launcher {
 }

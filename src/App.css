@@ -16,8 +16,27 @@
   margin-top: 0.4rem /* 12px */;
   margin-bottom: 0.4rem /* 12px */;
   cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 10%;
+}
+
+/* .launcher-folder-icon:hover, */
+.folder-icon:hover {
+  background-color: #6f6f6f;
 }
 
 .folder-icon > div {
   margin-bottom: 0.2rem;
+}
+
+.launcher-folder-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+  padding: 0.1rem;
+  border-radius: 10%;
 }

@@ -86,7 +86,7 @@ function Toolbar({ setBrightnessValue, brightnessValue }) {
             horizontal: "left",
           }}
           className='m-3'>
-          <div className=' w-72 p-3 px-4 bg-darker flex flex-col justify-between items-center'>
+          <div className=' w-72 p-3 px-4 bg-dark-8 flex flex-col justify-between items-center'>
             {/* brightness slider */}
             <div className='w-full  my-0 '>
               <div className='flex items-center content-between'>
