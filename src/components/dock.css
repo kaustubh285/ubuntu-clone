@@ -9,7 +9,7 @@
 }
 
 .gedit-img-dock {
-  background: url("/public/GNOME_Gedit_2018\ \(1\).png");
+  background: url("/public/icons/GNOME_Gedit_2018\ \(1\).png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 }
 
 .chrome-img-dock {
-  background: url("/public/chrome.png");
+  background: url("/public/icons/chrome.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -92,7 +92,7 @@ function Toolbar({ setBrightnessValue, brightnessValue }) {
               <div className='flex items-center content-between'>
                 <SunIcon className='h-4 w-6 mr-3 text-white' />
                 <Slider
-                  min={3}
+                  min={1}
                   max={10}
                   className='text-white'
                   size='small'

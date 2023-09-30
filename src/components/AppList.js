@@ -19,27 +19,39 @@ function AppList() {
     },
     {
       name: "VS  Code",
-      img: "https://img.icons8.com/color/48/folder-invoices--v1.png",
+      img: "icons/icon-vs-code.png",
     },
     {
       name: "Terminal",
-      img: "https://img.icons8.com/color/48/folder-invoices--v1.png",
+      img: "icons/icon-terminal.png",
     },
     {
       name: "Spotify",
-      img: "https://img.icons8.com/color/48/folder-invoices--v1.png",
+      img: "icons/icon-spotify.png",
     },
     {
-      name: "Setting",
-      img: "https://img.icons8.com/color/48/folder-invoices--v1.png",
+      name: "Libre Charts",
+      img: "icons/libreoffice-chatrs.png",
+    },
+    {
+      name: "Libre Draw",
+      img: "icons/libreoffice-draw.png",
+    },
+    {
+      name: "Libre Impress",
+      img: "icons/libreoffice-impress.png",
+    },
+    {
+      name: "Libre Writer",
+      img: "icons/libreoffice-writer.png",
+    },
+    {
+      name: "Libre Base",
+      img: "icons/libreoffice-base.png",
     },
     {
       name: "Trash",
-      img: "https://img.icons8.com/color/48/folder-invoices--v1.png",
-    },
-    {
-      name: "Contact Me",
-      img: "https://img.icons8.com/color/48/folder-invoices--v1.png",
+      img: "icons/icon-trash.png",
     },
     {
       name: "Downloads",
@@ -105,18 +117,22 @@ function AppList() {
         </div>
       </div>
       <div className='my-7'></div>
-      <div className='flex justify-center w-full  h-fit'>
-        <div className='flex w-10/12 h-full flex-wrap items-start justify-start'>
+      <div className='flex justify-center w-full h-full '>
+        <div
+          className='flex w-10/12 flex-wrap items-start justify-start'
+          style={{
+            height: "min-content",
+          }}>
           {appList.map(({ name, img }) => (
             <div
-              className=' w-28 h-20 launcher-folder-icon p-7 mr-5 hover:bg-zinc-400'
+              className='cursor-pointer w-28 h-24 launcher-folder-icon p-7 mr-5 hover:bg-zinc-400 flex flex-col justify-between'
               style={{
-                zIndex: 99,
+                zIndex: 999,
               }}>
               <img
                 width='48'
                 height='48'
-                className=' cursor-pointer opacity-90'
+                className=' cursor-pointer opacity-90 mb-3 max-h-14'
                 src={img}
                 alt='folder-invoices--v1'
               />

@@ -46,6 +46,45 @@ function Dock({
             />
             {/* <p className='text-sm cursor-pointer'>files</p> */}
           </div>
+
+          <div className='folder-icon text-white'>
+            <img
+              width='48'
+              height='48'
+              className=' cursor-pointer opacity-90 hover:opacity-90'
+              src='/icons/icon-terminal.png'
+              alt='folder-invoices--v1'
+            />
+          </div>
+
+          <div className='folder-icon text-white'>
+            <img
+              width='48'
+              height='48'
+              className=' cursor-pointer opacity-90 hover:opacity-90'
+              src='/icons/icon-vs-code.png'
+              alt='folder-invoices--v1'
+            />
+          </div>
+          <div className='folder-icon text-white'>
+            <img
+              width='48'
+              height='48'
+              className=' cursor-pointer opacity-90 hover:opacity-90'
+              src='/icons/icon-trash.png'
+              alt='folder-invoices--v1'
+            />
+          </div>
+
+          <div className='folder-icon text-white'>
+            <img
+              width='48'
+              height='48'
+              className=' cursor-pointer opacity-90 hover:opacity-90'
+              src='/icons/icon-spotify.png'
+              alt='folder-invoices--v1'
+            />
+          </div>
         </div>
         <div
           className='flex-none cursor-pointer p-2 folder-icon'

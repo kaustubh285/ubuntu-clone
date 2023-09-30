@@ -32,51 +32,58 @@ function Desktop({ blackLayerVisibility, iconsVisibility }) {
           <AppList />
         ) : (
           <>
-            <div className='p-3 w-full h-full'>
+            {/* <div className='p-3 w-full h-full'>
               <Draggable disabled={disabled} bounds='parent'>
                 <XtermTerminal />
               </Draggable>
+            </div> */}
+
+            <div className='p-3 w-full h-full'>
+              <Draggable
+                disabled={disabled}
+                bounds='parent'
+                defaultClassName=' cursor-move'>
+                <div
+                  style={{
+                    paddingLeft: 60,
+                    paddingTop: 20,
+                    cursor: "move !important",
+                  }}
+                  className='w-fit cursor-move'>
+                  <div className=' folder-icon cursor-move'>
+                    <div
+                      style={{
+                        background:
+                          'url("https://img.icons8.com/color/48/folder-invoices--v1.png")',
+                      }}
+                      className=' h-10 w-12 my-1 opacity-80 cursor-move object-contain'
+                      src=''
+                      alt='folder-invoices--v1'
+                    />
+                    <h3 className='cursor-move'>Documents</h3>
+                  </div>
+                </div>
+              </Draggable>
+
+              <Draggable disabled={disabled} bounds='parent'>
+                <div
+                  style={{ paddingLeft: 60, paddingTop: 20 }}
+                  className='w-fit'>
+                  <div className=' cursor-move folder-icon'>
+                    <div
+                      style={{
+                        background:
+                          'url("https://img.icons8.com/color/48/folder-invoices--v1.png")',
+                      }}
+                      className=' h-10 w-12 my-1 opacity-80  object-contain'
+                      src=''
+                      alt='folder-invoices--v1'
+                    />
+                    <h3>Downloads</h3>
+                  </div>
+                </div>
+              </Draggable>
             </div>
-
-            {/* <div className='p-3 w-full h-full'>
-            <Draggable disabled={disabled} bounds='parent'>
-              <div
-                style={{ paddingLeft: 60, paddingTop: 20 }}
-                className='w-fit'>
-                <div className='cursor-move folder-icon'>
-                  <div
-                    style={{
-                      background:
-                        'url("https://img.icons8.com/color/48/folder-invoices--v1.png")',
-                    }}
-                    className=' h-10 w-12 my-1 opacity-80  object-contain'
-                    src=''
-                    alt='folder-invoices--v1'
-                  />
-                  <h3>Documents</h3>
-                </div>
-              </div>
-            </Draggable>
-
-            <Draggable disabled={disabled} bounds='parent'>
-              <div
-                style={{ paddingLeft: 60, paddingTop: 20 }}
-                className='w-fit'>
-                <div className=' cursor-move folder-icon'>
-                  <div
-                    style={{
-                      background:
-                        'url("https://img.icons8.com/color/48/folder-invoices--v1.png")',
-                    }}
-                    className=' h-10 w-12 my-1 opacity-80  object-contain'
-                    src=''
-                    alt='folder-invoices--v1'
-                  />
-                  <h3>Downloads</h3>
-                </div>
-              </div>
-            </Draggable>
-          </div> */}
           </>
         )}
       </div>

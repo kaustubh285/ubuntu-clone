@@ -18,8 +18,13 @@
   cursor: pointer;
   padding: 0.3rem;
   border-radius: 10%;
+  max-height: 90px;
+  /* background-color: aqua; */
 }
-
+.folder-icon > img {
+  /* max-height: 2.2rem; */
+  /* max-width: 2rem; */
+}
 /* .launcher-folder-icon:hover, */
 .folder-icon:hover {
   background-color: #6f6f6f;
