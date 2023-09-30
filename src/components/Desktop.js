@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import Dock from "./Dock";
 import Draggable from "react-draggable";
 import AppList from "./AppList";
+import XtermTerminal from "./XtermTerminal";
 
 function Desktop({ blackLayerVisibility, iconsVisibility }) {
   let disabled = false;
 
-  const [showLauncher, setShowLauncher] = useState(true);
+  const [showLauncher, setShowLauncher] = useState(false);
 
   return (
     <div className='desktop flex w-full'>
@@ -30,7 +31,14 @@ function Desktop({ blackLayerVisibility, iconsVisibility }) {
         {showLauncher ? (
           <AppList />
         ) : (
-          <div className='p-3 w-full h-full'>
+          <>
+            <div className='p-3 w-full h-full'>
+              <Draggable disabled={disabled} bounds='parent'>
+                <XtermTerminal />
+              </Draggable>
+            </div>
+
+            {/* <div className='p-3 w-full h-full'>
             <Draggable disabled={disabled} bounds='parent'>
               <div
                 style={{ paddingLeft: 60, paddingTop: 20 }}
@@ -68,7 +76,8 @@ function Desktop({ blackLayerVisibility, iconsVisibility }) {
                 </div>
               </div>
             </Draggable>
-          </div>
+          </div> */}
+          </>
         )}
       </div>
     </div>
